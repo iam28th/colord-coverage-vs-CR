@@ -1,0 +1,156 @@
+input is not gzipped
+ * * * * * * * * * * * * Parameters * * * * * * * * * * * * 
+	input file path: data/SRX18997756-subs-cov-5.fasta
+	output file path: data/SRX18997756-subs-cov-5.fasta.ont-default
+	number of threads: 8
+	k-mer length: 20
+	anchor length: 16
+	data source type: ONT
+	multipier for predicted cost of storing read part as edit script: 1
+	filter modulo: 12
+	header compression mode: org
+	max candidates: 5
+	min k-mer count: 4
+	max k-mer count: 80
+	max matches multiplier: 10
+	max recurence: 3
+	min anchors: 1
+	min fraction of m-mers in encode: 0.5
+	min fraction of m-mers in encode to always encode: 0.9
+	min part length to consider alternative reference read: 64
+	compression priority: memory
+	quality compression mode: 4-avg
+	quality thresholds:  7 14 26
+	quality values: 
+	reference reads mode: sparse
+	sparse mode exponent: 1
+	sparse mode range: 1
+	fill factor filtered k-mers: 0.75
+	fill factor k-mers to reads: 0.8
+Counting k-mers.
+Stage 1: 0%Stage 1: 100%
+Stage 2: 0%Stage 2: 1%Stage 2: 3%Stage 2: 5%Stage 2: 6%Stage 2: 8%Stage 2: 9%Stage 2: 11%Stage 2: 12%Stage 2: 14%Stage 2: 15%Stage 2: 17%Stage 2: 18%Stage 2: 20%Stage 2: 21%Stage 2: 23%Stage 2: 24%Stage 2: 25%Stage 2: 27%Stage 2: 28%Stage 2: 30%Stage 2: 31%Stage 2: 32%Stage 2: 34%Stage 2: 35%Stage 2: 36%Stage 2: 37%Stage 2: 39%Stage 2: 40%Stage 2: 41%Stage 2: 42%Stage 2: 43%Stage 2: 45%Stage 2: 46%Stage 2: 47%Stage 2: 48%Stage 2: 49%Stage 2: 50%Stage 2: 52%Stage 2: 53%Stage 2: 54%Stage 2: 55%Stage 2: 56%Stage 2: 57%Stage 2: 58%Stage 2: 59%Stage 2: 60%Stage 2: 61%Stage 2: 62%Stage 2: 63%Stage 2: 64%Stage 2: 65%Stage 2: 66%Stage 2: 67%Stage 2: 68%Stage 2: 69%Stage 2: 70%Stage 2: 71%Stage 2: 72%Stage 2: 73%Stage 2: 74%Stage 2: 75%Stage 2: 76%Stage 2: 77%Stage 2: 78%Stage 2: 79%Stage 2: 80%Stage 2: 81%Stage 2: 82%Stage 2: 83%Stage 2: 84%Stage 2: 85%Stage 2: 86%Stage 2: 87%Stage 2: 88%Stage 2: 89%Stage 2: 90%Stage 2: 91%Stage 2: 92%Stage 2: 93%Stage 2: 94%Stage 2: 95%Stage 2: 96%Stage 2: 97%Stage 2: 98%Stage 2: 99%Stage 2: 100%
+tot k-mers: 1976128
+n uniq counted: 112576
+approx. avg. read len: 7926
+Filtering k-mers.
+0%1%2%3%4%5%6%7%8%9%10%11%12%13%14%15%16%17%18%19%20%21%22%23%24%25%26%27%28%29%30%31%32%33%34%35%36%37%38%39%40%41%42%43%44%45%46%47%48%49%50%51%52%53%54%55%56%57%58%59%60%61%62%63%64%65%66%67%68%69%70%71%72%73%74%75%76%77%78%79%80%81%82%83%84%85%86%87%88%89%90%91%92%93%94%95%96%97%98%99%100%
+Total count filtered: 592072
+Time: 0.0050249s
+reads queue approx. size: 73728KiB
+quals queue approx. size: 532480KiB
+headers queue approx. size: 73728KiB
+compress queue approx. size: 98307KiB
+es queue approx. size: 112640KiB
+es queue for qual approx. size: 0KiB
+queues approx size: 870MiB
+filtered kmers size: 1MiB
+ref reads expected size: 1MiB
+kmers to reads expected size: 0MiB
+approx total memory: 873MiB
+adjusted memory related settings:
+	fill_factor_kmers_to_reads: 0.8
+	sparseMode_range: 170
+	sparseMode_exponent: 1
+sparse mode range in reads: 170
+Running compression.
+Kmers to reads memory usage: 1MiB
+17%36%53%72%88%100%
+Threads times summary:
+	reader: 0.105995
+	similarity finder: 0.04035
+	similarity finder internal (sorted): 0.022443 0.037424 0.040089 0.045068 0.049229 0.051146 0.056188 0.056992
+	mean similarity finder internal: 0.0448224
+	encoders (sorted): 1.3e-05 1.167 1.19278 1.49228 1.61205 1.63593 1.8143
+	mean encoders: 1.27348
+	encoders wait on queue (sorted): 0.0450241 0.065046 0.0836392 0.105948 0.131604 0.155303 0.155371
+	mean encoders wait on queue: 0.105991
+	entr. compr.: 0.365435
+	entr. compr. header: 0.046221
+	store result: 0.00015
+Input stream sizes (before compression):
+	DNA size     : 23780122
+	Header size  : 111871
+DNA size        : 3931667
+Quality size    : 0
+Header size     : 14368
+Meta size       : 51
+Info size       : 172
+reference reads memory usage: 1MiB
+Total time      : 2.90067s
+ * * * * * * * * READS STATS * * * * * * * * 
+# reads                        : 2999
+min read len                   : 2000
+max read len                   : 73428
+# symbols                      : 23780122
+ * * * * * * * * REFUSE REASONS STATS * * * * * * * * 
+# not enough uniq mmers in enc : 0
+# too many matches             : 0
+# too low anchors              : 0
+ * * * * * * * * COMPRESSION STATS * * * * * * * * 
+# plain reads                  : 784
+# symb plain reads             : 4008583
+# plain reads (reason: N)      : 0
+# symb plain reads (reason: N) : 0
+# non rev choosen              : 3157
+# rev choosen                  : 3150
+ --------------- level 0 --------------- 
+# alt for left flank           : 392
+# alt in between anchors       : 94
+# alt for right flank          : 389
+# symb plain                   : 4327108
+# symb edit script encoded     : 2332440
+# symb in edit script          : 3871507
+# mismatches                   : 225556
+# matches                      : 1882839
+# insertions                   : 224045
+# deletions                    : 1539067
+# symb anchors                 : 7287928
+# anchors                      : 213837
+# symb left flank              : 4850438
+# symb right flank             : 4639875
+ --------------- level 1 --------------- 
+# alt for left flank           : 111
+# alt in between anchors       : 26
+# alt for right flank          : 105
+# symb plain                   : 2569944
+# symb edit script encoded     : 364733
+# symb in edit script          : 869811
+# mismatches                   : 36279
+# matches                      : 293601
+# insertions                   : 34853
+# deletions                    : 505078
+# symb anchors                 : 1019711
+# anchors                      : 30786
+# symb left flank              : 2029046
+# symb right flank             : 2200591
+ --------------- level 2 --------------- 
+# alt for left flank           : 20
+# alt in between anchors       : 7
+# alt for right flank          : 20
+# symb plain                   : 1281478
+# symb edit script encoded     : 67240
+# symb in edit script          : 130712
+# mismatches                   : 6777
+# matches                      : 54218
+# insertions                   : 6245
+# deletions                    : 63472
+# symb anchors                 : 200702
+# anchors                      : 6022
+# symb left flank              : 732503
+# symb right flank             : 791391
+ --------------- level 3 --------------- 
+# alt for left flank           : 0
+# alt in between anchors       : 0
+# alt for right flank          : 0
+# symb plain                   : 293833
+# symb edit script encoded     : 7570
+# symb in edit script          : 37856
+# mismatches                   : 739
+# matches                      : 6081
+# insertions                   : 750
+# deletions                    : 30286
+# symb anchors                 : 18852
+# anchors                      : 574
+# symb left flank              : 148507
+# symb right flank             : 139264
